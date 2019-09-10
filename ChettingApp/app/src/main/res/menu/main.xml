@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_online"
+        android:orderInCategory="100"
+        android:title="@string/action_online"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_frnd_req"
+        android:orderInCategory="100"
+        android:title="@string/friends_request"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_find_people"
+        android:orderInCategory="100"
+        android:title="@string/find_people"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="@string/action_logout"
+        app:showAsAction="never" />
+
+</menu>

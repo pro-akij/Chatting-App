@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyAccount.ProSetting"
+    android:orientation="vertical"
+    android:background="#B9C2D5">
+
+    <include layout="@layout/custom_app_ber"
+        android:id="@+id/toolbar_prositting"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20sp"
+            android:orientation="vertical">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_display_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="20sp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:hint="@string/d_name" />
+
+            <Spinner
+                android:id="@+id/select_gender"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginTop="5sp">
+            </Spinner>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/enter_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:background="@drawable/round2"
+                android:hint="@string/birthdate" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:textColor="@color/colorWhite"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:inputType="number"
+                android:hint="@string/contact_number" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/contact_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="20sp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:hint="@string/contact_email" />
+
+            <Button
+                android:id="@+id/choose_profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:paddingStart="20sp"
+                android:text="@string/choose_image"
+                android:background="@drawable/round2"
+                android:layout_marginTop="20sp"
+                android:textAllCaps="false"
+                android:gravity="left"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginTop="20sp"
+                android:hint="@string/d_status" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edit_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="20sp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:hint="@string/location" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20sp">
+
+                <RadioGroup
+                    android:id="@+id/radiobtnGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/selectStudents"
+                        android:layout_width="0sp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/students"/>
+
+                    <RadioButton
+                        android:id="@+id/selectJobs"
+                        android:layout_width="0sp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="@string/jobholder"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/your_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginTop="20sp"
+                android:hint="@string/company"
+                android:visibility="gone"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/your_institute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:layout_marginTop="20sp"
+                android:hint="@string/institute"
+                android:visibility="gone"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/profile_bio"
+                android:layout_width="match_parent"
+                android:layout_height="100sp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="20sp"
+                android:hint="@string/bio"/>
+
+            <Button
+                android:id="@+id/update_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round"
+                android:layout_marginTop="20sp"
+                android:text="update"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

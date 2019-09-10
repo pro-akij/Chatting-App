@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5sp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/frndlist_profile_image"
+        android:layout_width="80sp"
+        android:layout_height="80sp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/frndlist_display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30sp"
+        android:layout_marginStart="20sp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/frndlist_profile_image"
+        android:text="@string/d_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/frndlist_display_name"
+        android:gravity="end">
+
+        <ImageView
+            android:id="@+id/online_icon"
+            android:layout_width="15sp"
+            android:layout_height="30sp"
+            android:gravity="center"
+            android:src="@drawable/onlineicon"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/frndlist_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:text="@string/d_status"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/frndlist_display_name"
+        android:layout_toEndOf="@id/frndlist_profile_image"/>
+    <TextView
+        android:id="@+id/frndlist_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:text="@string/frndListDate"
+        android:layout_below="@id/frndlist_status"
+        android:layout_toEndOf="@id/frndlist_profile_image"/>
+
+</RelativeLayout>

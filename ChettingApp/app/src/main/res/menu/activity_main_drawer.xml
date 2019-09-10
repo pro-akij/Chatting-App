@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/acc_setting"
+            android:icon="@drawable/ic_edit"
+            android:title="@string/account_setting" />
+        <item
+            android:id="@+id/nav_findPeople"
+            android:icon="@drawable/ic_search"
+            android:title="@string/find_people" />
+        <item
+            android:id="@+id/nav_viewSendRequest"
+            android:icon="@drawable/ic_contact"
+            android:title="@string/viewSendReq" />
+        <item
+            android:id="@+id/nav_alluser"
+            android:icon="@drawable/ic_contact"
+            android:title="@string/all_user" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+        </menu>
+    </item>
+
+</menu>

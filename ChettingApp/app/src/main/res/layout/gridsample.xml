@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250sp"
+    android:elevation="10sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="5sp">
+
+        <ImageView
+            android:id="@+id/gridImage"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/gridLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/location"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:id="@+id/gridName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_below="@id/gridImage"
+            android:text="@string/name"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

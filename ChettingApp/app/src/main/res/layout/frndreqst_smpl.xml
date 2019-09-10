@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5sp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/my_frnd_profile_image"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/my_frnd_display_name"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginStart="20sp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/my_frnd_profile_image"
+        android:text="@string/d_name" />
+
+    <TextView
+        android:id="@+id/my_frnd_status"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_marginStart="20sp"
+        android:text="@string/d_status"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:layout_below="@id/my_frnd_display_name"
+        android:layout_toEndOf="@id/my_frnd_profile_image"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_frnd_profile_image"
+        android:layout_marginTop="5sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16sp"
+            android:paddingEnd="16sp">
+
+            <Button
+                android:id="@+id/add_my_frnd_list"
+                android:layout_width="0sp"
+                android:layout_height="40sp"
+                android:layout_weight="1"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorGreen"
+                android:text="@string/a_request"/>
+
+            <Button
+                android:id="@+id/delete_frnd_list"
+                android:layout_width="0sp"
+                android:layout_height="40sp"
+                android:elevation="5sp"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:text="@string/d_request"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

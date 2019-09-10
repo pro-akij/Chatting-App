@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash"
+    android:orientation="vertical"
+    android:background="@drawable/card">
+
+    <include layout="@layout/custom_app_ber"
+        android:id="@+id/toolbar_splash"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/welltext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_main_text"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/go_to_login"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/splash_log_in"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:elevation="15sp"
+            android:layout_gravity="center"
+            android:background="@drawable/round2"/>
+
+        <Button
+            android:id="@+id/go_to_register"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="create account"
+            android:textAllCaps="true"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

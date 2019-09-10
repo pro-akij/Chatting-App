@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllUser.FindUser"
+    android:orientation="vertical">
+
+    <include layout="@layout/custom_app_ber"
+        android:id="@+id/toolbar_allfinder"/>
+
+    <LinearLayout
+        android:padding="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/enter_search_text"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"
+            android:textSize="18sp"
+            android:hint="enter your search text"
+            android:background="@drawable/round2" />
+
+        <ImageButton
+            android:id="@+id/search_button"
+            android:layout_width="0sp"
+            android:layout_weight="2"
+            android:elevation="5sp"
+            android:background="@drawable/round2"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_search"/>
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/finder_recylarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16sp">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

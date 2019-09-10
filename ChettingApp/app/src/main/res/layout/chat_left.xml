@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300sp"
+    android:padding="8sp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_profle_image"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/message_chatID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/message_profle_image"
+        android:text="hi ki koro"
+        android:padding="8sp"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginStart="5sp"
+        android:background="@drawable/background_leftuser"/>
+
+    <ImageView
+        android:id="@+id/message_imageID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message_chatID"
+        android:layout_toEndOf="@id/message_profle_image"/>
+
+</RelativeLayout>

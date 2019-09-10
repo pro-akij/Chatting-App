@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "50203534330",
+    "firebase_url": "https://chatting-app-233ce.firebaseio.com",
+    "project_id": "chatting-app-233ce",
+    "storage_bucket": "chatting-app-233ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50203534330:android:ea0abbbb2e8b0181",
+        "android_client_info": {
+          "package_name": "com.freechetwithyounme.chettingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "50203534330-gi75v0i7j3kt1eom9om3tmoonvcudnro.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.freechetwithyounme.chettingapp",
+            "certificate_hash": "126f8d81c93795fee2d0659af02b530fb4da1248"
+          }
+        },
+        {
+          "client_id": "50203534330-qf0361eg55j853kaagtuub41c1727ldt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC__sTzw8XhEmzMzWHyzM_vbwkeaz-XGOg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "50203534330-qf0361eg55j853kaagtuub41c1727ldt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

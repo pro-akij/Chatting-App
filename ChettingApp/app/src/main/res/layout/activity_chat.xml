@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Chat.ChatActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_ber_freetrial"
+        android:id="@+id/message_app_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="9">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_of_messages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <ImageButton
+            android:id="@+id/select_file"
+            android:layout_width="0sp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_attach_file"/>
+
+        <Space
+            android:layout_width="3sp"
+            android:layout_height="match_parent" />
+        
+        <EditText
+            android:id="@+id/input_your_message"
+            android:layout_width="0sp"
+            android:layout_weight="8"
+            android:layout_height="wrap_content"
+            android:hint="@string/message_hint"/>
+
+        <Space
+            android:layout_width="3sp"
+            android:layout_height="match_parent" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:src="@drawable/ic_menu_send"
+            android:tint="@android:color/white"
+            app:fabSize="mini" />
+    </LinearLayout>
+
+</LinearLayout>
